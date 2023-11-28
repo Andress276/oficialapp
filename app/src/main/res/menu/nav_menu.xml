@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/baseline_home_24"/>
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="Perfil"
+            android:icon="@drawable/baseline_people_24"/>
+
+        <group android:id="@+id/group_middle">
+
+            <item
+                android:id="@+id/nav_configurar"
+                android:title="Configuracion"
+                android:icon="@drawable/baseline_settings_24"/>
+
+            <item
+                android:id="@+id/nav_calificar"
+                android:title="Calificanos"
+                android:icon="@drawable/baseline_star_rate_24"/>
+
+            <item
+                android:id="@+id/nav_compartir"
+                android:title="Compartir"
+                android:icon="@drawable/baseline_share_24"/>
+
+            <item
+                android:id="@+id/nav_riego"
+                android:title="Riego"
+                android:icon="@drawable/baseline_filter_vintage_24"/>
+        </group>
+
+        <item
+            android:id="@+id/nav_cerrar"
+            android:title="Cerrar Sesion"
+            android:icon="@drawable/baseline_logout_24"/>
+    </group>
+
+</menu>

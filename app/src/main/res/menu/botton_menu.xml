@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/bottom_Funcionalidad"
+        android:title="Funcionalidad"
+        android:icon="@drawable/baseline_volunteer_activism_24"/>
+
+    <item
+        android:title=""
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/bottom_contact"
+        android:title="Contactanos"
+        android:icon="@drawable/baseline_message_24"/>
+
+    <item
+        android:id="@+id/bottom_somos"
+        android:title="Quienes Somos"
+        android:icon="@drawable/baseline_people_24"/>
+
+</menu>
