@@ -3,32 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text=""
-        android:textColor="@color/verde"
-        android:textSize="40dp" />
-
-    <Button
-        android:id="@+id/botoncrud"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="boton"
-        android:layout_marginTop="200dp"/>
-
-    <TextView
-        android:id="@+id/textViewNombreUsuario"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
+        android:text="Bienvenidos"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/my_custom_font"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:background="#80000000"
+        android:padding="16dp"/>
 
 </FrameLayout>

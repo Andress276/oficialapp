@@ -27,15 +27,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val nombreUsuario = SharedPreferencesManager.obtenerNombreUsuario(requireContext())
-        Log.d("NombreUsuario", "El nombre de usuario recuperado es: $nombreUsuario")
-        val textViewNombreUsuario = view.findViewById<TextView>(R.id.textViewNombreUsuario)
 
-        if (nombreUsuario != null && textViewNombreUsuario != null) {
-            textViewNombreUsuario.text = "¡Bienvenido, $nombreUsuario!"
-
-            Log.d("NombreUsuario", "El nombre de usuario recuperado es: $nombreUsuario")
-        }
     }
 
     override fun onCreateView(
@@ -44,12 +36,7 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val botonCrud = view.findViewById<Button>(R.id.botoncrud)
-        botonCrud.setOnClickListener {
-            // Crear una intención para iniciar BienvenidaActivity
-            val intent = Intent(requireContext(), BienvActivity::class.java)
-            startActivity(intent)
-        }
+
 
         return view
     }
